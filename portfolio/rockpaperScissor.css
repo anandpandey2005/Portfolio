@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&family=Cedarville+Cursive&family=Vast+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&family=Cedarville+Cursive&family=Permanent+Marker&family=Vast+Shadow&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+
+    width: 100%;
+    position: relative;
+
+}
+
+.a {
+
+    color: black;
+    text-decoration: none;
+
+}
+
+button {
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: "Black Ops One", system-ui;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    background-color: salmon;
+    color: aliceblue;
+}
+
+button:hover {
+    background-color: rgb(241, 175, 168);
+}
+
+.reset {
+    margin-top: 20px;
+}
+
+.flex {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.main {
+
+    width: 100%;
+    position: relative;
+    background-color: white;
+
+
+}
+
+.nav {
+    width: 100%;
+    height: 10%;
+    padding: 3vw 3vw 3vw 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 999;
+    border-bottom: 2px solid rgb(117, 117, 114);
+    background-color: aliceblue;
+}
+
+.links {
+    font-size: 120%;
+    text-transform: capitalize;
+    display: flex;
+    gap: 3vw;
+
+}
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:"Black Ops One", system-ui;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+    position: fixed;
+    right: -100%;
+    background-color: aliceblue;
+    width: 30%;
+    height: 100%;
+    border-left: 1px solid #ccc;
+    padding: 80px 10px;
+    transition: right 0.8s ease-in-out;
+    z-index: 10;
+ }
+ 
+ .mobile-nav .mob-link {
+    margin: 20px 0;
+ }
+ 
+ .mobile-nav.open {
+    right: 0;
+ }
+
+.content {
+    width: 100%;
+    padding: 30px 0px;
+    align-items: center;
+    position: relative;
+
+}
+
+.content h1 {
+    text-align: center;
+    font-family: "Black Ops One", system-ui;
+    font-size: 5vw;
+    font-weight: 400;
+    font-style: normal;
+    color: blueviolet;
+}
+
+.content h2 {
+    margin-top: 20px;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 4vw;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.display-container {
+    margin-top: 20px;
+    padding: 3vw;
+    border: 2px solid black;
+    border-radius: 20px;
+    justify-content: space-around;
+    gap: 100px;
+    box-shadow: 0px 20px 20px rgb(80, 78, 78);
+}
+
+.user-container {
+    display: grid;
+    align-items: center;
+
+
+
+}
+
+.user {
+    margin-top: 20px;
+    font-family: "Permanent Marker", cursive;
+    font-size: 25px;
+    font-weight: 400;
+    font-style: normal;
+
+
+}
+
+.score {
+    font-family: "Vast Shadow", serif;
+    font-size: 25px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+.instructor {
+    padding: 2vw;
+    margin: 20px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.options {
+    text-align: center;
+
+}
+
+.reset {
+    text-align: center;
+}
+
+.game-count {
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.times {
+    color: red;
+}
+
+.about {
+    padding: 10%;
+    color: aliceblue;
+    background-color: black;
+    display: grid;
+}
+
+.about h3 {
+    text-transform: uppercase;
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.code {
+    margin-top: 10px;
+}
+
+.instruction {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+@media (max-width:700px) {
+
+    .links {
+        font-size: 22px;
+
+    }
+
+    .links h3 {
+        display: none;
+    }
+
+    .parser {
+        height: 8vh;
+        background-color: white;
+    }
+}
+
+@media (min-width:700px) {
+
+    .links {
+        font-size: 22px;
+
+    }
+
+    .links h2 {
+        display: none;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    .parser {
+        height: 10vh;
+        background-color: white;
+    }
+
+    .about h3 {
+        font-size: 3vw;
+    }
+
+    .about {
+        font-size: 2vw;
+    }
+
+}
+
+/* For max-width 350px */
+@media (max-width: 350px) {
+    .nav {
+        padding: 2vw;
+        font-size: 12px;
+    }
+
+    .links {
+        font-size: 14px;
+        gap: 1vw;
+    }
+
+    .content {
+        padding: 15px 0px;
+    }
+
+    .content h1 {
+        font-size: 4vw;
+    }
+
+    .content h2 {
+        font-size: 3vw;
+    }
+
+    .display-container {
+        padding: 2vw;
+        gap: 50px;
+    }
+
+    .user-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .user {
+        font-size: 20px;
+    }
+
+    .score {
+        font-size: 20px;
+    }
+
+    .instructor {
+        padding: 1vw;
+        margin: 10px 0px;
+        font-size: 4vw;
+    }
+
+    .options, .reset, .game-count {
+        font-size: 14px;
+    }
+
+    .about {
+        padding: 5%;
+        font-size: 1.2em;
+    }
+
+    .about h3 {
+        font-size: 5vw;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .parser {
+        height: 5vh;
+    }
+
+    .instruction {
+        padding: 5%;
+    }
+}
